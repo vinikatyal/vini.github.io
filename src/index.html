@@ -1,0 +1,93 @@
+<!doctype>
+<html>
+<head>
+	<title>Prima App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../node_modules/material-design-lite/material.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+            mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row mdl-color--blue-grey-900">
+      <div class="mdl-layout-spacer"></div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+        <label class="mdl-button mdl-js-button mdl-button--icon"
+               for="fixed-header-drawer-exp">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" name="sample"
+                 id="fixed-header-drawer-exp" />
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Demo Company</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+    <div class="mdl-grid">
+  <div class="mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
+ 
+ <form action="#">
+   <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" id="sample1" pattern="[A-Z,a-z, ]*" />
+    <label class="mdl-textfield__label" for="sample1">Product Name...</label>
+    <span class="mdl-textfield__error">Letters and spaces only</span>
+  </div>
+  <br/>
+ <div class="mdl-textfield mdl-js-textfield">
+  <input class="mdl-textfield__input" type="text" id="fname" />
+  <label class="mdl-textfield__label" for="fname">First name</label>
+</div>
+   <br/>
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
+    <input class="mdl-textfield__input" type="text" id="sample3" />
+    <label class="mdl-textfield__label" for="sample3">Text...</label>
+  </div>
+   <br/>
+ <div class="mdl-textfield mdl-js-textfield textfield-demo">
+    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2" />
+    <label class="mdl-textfield__label" for="sample2">Number...</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+  <br>
+   <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+  Save Product
+</button>
+</form>
+
+ 
+  </div>
+  
+</div>
+
+    </div>
+  </main>
+  <footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer--right-section">
+    <div class="mdl-logo">Title</div>
+    <ul class="mdl-mini-footer--link-list">
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Privacy & Terms</a></li>
+    </ul>
+  </div>
+</footer>
+</div>
+
+</body>
+
+	<script src="../node_modules/material-design-lite/material.min.js"></script>
+</html>

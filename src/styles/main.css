@@ -1,0 +1,37 @@
+
+.mdl-color--blue-grey-900 {
+  background-color: #272D4E !important;
+}
+
+.mdl-layout__drawer-button  {
+	 background-color: #263238 !important;
+}
+.mdl-color-text--grey-600 {
+  color: #757575 !important;
+}
+
+.mdl-button--raised.mdl-button--colored {
+  background: #fb8c00 !important;
+  color: #fff;
+  font: bold;
+}
+.mdl-button--raised.mdl-button--colored:hover {
+  background-color: #fb8c00 !important;
+}
+
+.mdl-layout__drawer {
+
+  background: #272D4E;
+  color: #fff;
+     border-right: none; 
+
+}
+
+.mdl-mini-footer {
+	  background: #414B82;
+  color:#fff;
+}
+
+.mdl-layout__drawer-button {
+	background: #272D4E !important;
+}
