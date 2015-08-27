@@ -374,7 +374,7 @@ section h3.section-subheading {
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
-    opacity: 1;
+    opacity: 0.5;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
@@ -391,12 +391,20 @@ section h3.section-subheading {
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
     margin-top: -12px;
 }
+.portfolio-hover-content i {
+	margin-top: 75px;
+	color:#FFFFFF
+}
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
     margin: 0;
 }
 
+.portfolio-hover .portfolio-hover-content {
+	
+
+}
 #portfolio .portfolio-item .portfolio-caption {
     margin: 0 auto;
     padding: 25px;
@@ -864,4 +872,97 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #fed136;
+}
+.blog1{ text-decoration:none
+}
+.abt{
+	background: #333 url(../img/bg_services.png);
+	background-attachment:fixed;
+	color:#FFFFFF;
+	padding:40px 0px
+}
+
+
+/*==============================
+		portfolio animated
+==============================*/
+.port ul {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.port ul li {
+	background-color: #fed136;
+	float: left;
+	list-style: outside none none;
+	min-height: 100%;
+	width: 25%;
+}
+.port figure {
+	position: relative;
+	overflow: hidden;
+}
+.port figure img {
+	height: 100%;
+	transition: all 300ms ease-in-out 0s;
+	width: 100%;
+}
+.port figure:hover img,
+.port figure:focus img {
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.port figcaption {
+	background-color: rgba(254, 209, 54, 0.9);
+	font-size: 15px;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	padding: 25% 0;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	transition: all 300ms ease-in-out 0s;
+	width: 100%;
+}
+.port figcaption a {
+	color: #fff
+}
+.port figcaption a:hover,
+.port figcaption a:focus {
+	color: rgb(0, 175, 241);
+	list-style: none
+}
+.port figure:hover figcaption,
+.port figure:focus figcaption {
+	opacity: 0.5
+}
+.port figure.cs-hover figcaption {
+	opacity: 1
+}
+.port figcaption i {
+	font-size: 35px
+}
+.port figcaption p {
+	font-weight: 400;
+	margin-bottom: 0;
+	padding: 24px 0 0;
+	text-transform: uppercase;
+}
+.port figcaption .caption-content {
+	left: 50%;
+	margin-left: -100px;
+	margin-top: -40px;
+	position: absolute;
+	top: 30%;
+	transform: translate(0px, 15px);
+	transition: all 300ms ease-in-out 0s;
+	width: 200px;
+}
+.port figure:hover figcaption .caption-content,
+.port figure:focus figcaption .caption-content {
+	-webkit-transform: translate(0px, 0px);
+	-ms-transform: translate(0px, 0px);
+	transform: translate(0px, 0px);
 }
