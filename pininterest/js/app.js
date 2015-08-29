@@ -1,6 +1,6 @@
 var addLikes = (function () {
 
-    var counter = parseInt(document.getElementById("likeCount").value);
+    var counter = parseInt(document.getElementById("likeCount").innerHTML);
     return function () {return counter += 1;}
 })();
 
