@@ -1,0 +1,211 @@
+body {
+	background: #E1E1E1;
+	font-family: 'HelveticaNeue';
+}
+
+  @font-face {
+        font-family: 'HelveticaNeue';
+        src: url('../fonts/HelveticaNeue.ttf');
+        font-weight: normal;
+        font-style: normal;
+
+    }
+
+a {
+	text-decoration: none;
+	color:#717171;
+}
+
+a:hover {
+    color: #8a8a8a;
+}
+
+#wrapper {
+	width: 90%;
+	max-width: 1100px;
+	min-width: 800px;
+	margin: 50px auto;
+}
+
+#columns {
+	-webkit-column-count: 3;
+	-webkit-column-gap: 10px;
+	-webkit-column-fill: auto;
+	-moz-column-count: 3;
+	-moz-column-gap: 10px;
+	-moz-column-fill: auto;
+	column-count: 3;
+	column-gap: 15px;
+	column-fill: auto;
+}
+
+.pin {
+	display: inline-block;
+	/*background: #FEFEFE;*/
+	border: 2px solid #FAFAFA;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
+	margin: 0 2px 15px;
+	-webkit-column-break-inside: avoid;
+	-moz-column-break-inside: avoid;
+	column-break-inside: avoid;
+	padding: 4px;
+	padding-bottom: 5px;
+	background: #fff;
+	opacity: 1;
+	border-radius: 6px;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+}
+
+.pin img {
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+	margin-bottom: 5px;
+	border-radius: 6px;
+}
+
+.pin p {
+	font:12px 'HelveticaNeue',sans-serif;
+	color: #333;
+	margin: 0;
+}
+
+ .pin .pinMeta {
+    position: relative;
+    font-size:11px;
+    margin: 10px 16px;
+}
+.pin .pinMeta .pinDescription, .pin .pinMeta .pinAttribution, .pin .pinMeta .pinSocialMeta {
+    margin: 5px 0;
+}
+.pin .pinDescription {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #333;
+    font-size: 13px;
+    line-height: 17px;
+    word-wrap: break-word;
+}
+
+.pin .pinSocialMeta .socialItem {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: transparent;
+    color: #a7a7a7;
+    display: inline-block;
+    padding: 0 7px 0 0;
+}
+
+.SocialIconsCounts .socialMetaCount {
+    color: #999;
+    font-style: normal;
+    font-weight: normal;
+    position: relative;
+    top: 1px;
+}
+.SocialIconsCounts .repinIconSmall {
+    width: 14px;
+    height: 11px;
+    background: url("https://s-passets-cache-ak0.pinimg.com/webapp/style/sprites/webapp-common-above_the_fold-1x-c11aaa22.png") -200px -189px no-repeat;
+    display: inline-block;
+    font: 0 / 0 serif;
+    text-shadow: none;
+    color: transparent;
+    margin-bottom: -3px;
+}
+
+.SocialIconsCounts .likeIconSmall {
+    width: 12px;
+    height: 10px;
+    background: url("https://s-passets-cache-ak0.pinimg.com/webapp/style/sprites/webapp-common-above_the_fold-1x-c11aaa22.png") -75px -205px no-repeat;
+    display: inline-block;
+    font: 0 / 0 serif;
+    text-shadow: none;
+    color: transparent;
+    margin-bottom: -3px;
+}
+
+.pin .pinCredits {
+    font-family: "HelveticaNeue",sans-serif;
+    font-weight: bold;
+    border-top: 1px solid #e7e7e7;
+    color: #777;
+}
+.pin .creditItem {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    border-radius: 0 0 6px 6px;
+    display: block;
+    line-height: 14px;
+    font-size: 11px;
+    padding: 5px 14px;
+}
+.pin .creditItem .creditImg {
+    position: relative;
+    border-radius: 2px;
+    float: left;
+    height: 30px;
+    margin-right: 5px;
+    width: 30px;
+}
+.pin .creditItem .creditImg:after {
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 2px rgba(0,0,0,0.33) inset;
+    box-shadow: 0 0 2px rgba(0,0,0,0.33) inset;
+    content: " ";
+    height: 30px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 30px;
+}
+
+@media (min-width: 960px) {
+	#columns {
+		-webkit-column-count: 4;
+		-moz-column-count: 4;
+		column-count: 4;
+	}
+}
+
+@media (min-width: 1100px) {
+	#columns {
+		-webkit-column-count: 5;
+		-moz-column-count: 5;
+		column-count: 5;
+	}
+}
+
+.pin img:hover {
+	opacity: 0.9;
+	cursor: zoom-in;
+}
+
+.pin .pinCreditWrapper .hidePinInfo {
+    float: right;
+    margin-top: 16px;
+    margin-right: 12px;
+}
+.pin .pinCreditWrapper .hidePinInfo, .pin .promotedPinCreditDetailed .hidePinInfo {
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+.Button.borderless {
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+.Button .accessibilityText {
+    font: 0 / 0 serif;
+    text-shadow: none;
+    color: transparent;
+    position: absolute;
+}
