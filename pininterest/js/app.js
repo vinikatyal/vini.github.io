@@ -1,11 +1,14 @@
-var addLikes = (function () {
+var addLikes = (function (counter) {
+       return counter += 1;
+	});
+	$(document).ready(function(){
 
-    var counter = parseInt(document.getElementById("likeCount").innerHTML);
-    return function () {return counter += 1;}
-})();
-
-document.getElementById("likeCount").addEventListener("click", function(event){
-    event.preventDefault();
-    addLikes();
-});
+		$('#btnLike').click(function(e){
+			e.preventDefault();
+			var likeCount = $("#likeCountSmall").text();
+			var likes = addLikes(parseInt(likeCount));
+			console.log(likes);
+            $("#likeCountSmall").text(likes);
+		}); 
+	});
 
