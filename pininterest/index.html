@@ -11,24 +11,7 @@
 
 	<!-- Core CSS -->
 	<link href="css/style.css" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script type="text/javascript">
-	var addLikes = (function (counter) {
-       return counter += 1;
-	});
-	$(document).ready(function(){
-
-		$('#btnLike').click(function(e){
-			e.preventDefault();
-			var likeCount = $("#likeCountSmall").text();
-			var likes = addLikes(parseInt(likeCount));
-            $("#likeCountSmall").text(likes);
-		}); 
-	});
-
-
-
-	</script>
+	
 </head>
 <body>
 	<div id="wrapper">
@@ -100,5 +83,23 @@
 				</div>
 			</div>
 		</div>
-		</body>	
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript">
+		var addLikes = (function (counter) {
+			return counter += 1;
+		});
+		$(document).ready(function(){
+
+			$('#btnLike').click(function(e){
+				e.preventDefault();
+				var likeCount = $("#likeCountSmall").text();
+				var likes = addLikes(parseInt(likeCount));
+				$("#likeCountSmall").text(likes);
+			}); 
+		});
+
+
+
+		</script>
+	</body>	
 	</html>
