@@ -1,0 +1,663 @@
+<!doctype html>
+<!--[if lt IE 7]><html lang="en" class="no-js ie6"><![endif]-->
+<!--[if IE 7]><html lang="en" class="no-js ie7"><![endif]-->
+<!--[if IE 8]><html lang="en" class="no-js ie8"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Snaptasker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" href="assets/img/freeze/snaplogo.png">
+    
+    <!-- Bootstrap 3.3.2 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/js/rs-plugin/css/settings.css">
+
+    <link rel="stylesheet" href="assets/css/styles1.css">
+
+
+    <script type="text/javascript" src="assets/js/modernizr.custom.32033.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    
+    <div class="pre-loader">
+        <div class="load-con">
+            <img src="assets/img/freeze/snaplogo.png" class="animated fadeInDown" alt="">
+            <div class="spinner">
+              <div class="bounce1"></div>
+              <div class="bounce2"></div>
+              <div class="bounce3"></div>
+            </div>
+        </div>
+    </div>
+   
+    <header>
+        
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="fa fa-bars fa-lg"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            <img style="margin-left:170px" src="assets/img/freeze/snaplogo.png" alt="" class="logo">
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                        <ul class="nav navbar-nav navbar-right">                                                       
+                            <li><a href="#about">CATEGORIES</a>
+                            </li>
+							<li><a href="#features">WHY SNAPTASKER</a>
+                            </li> 
+							<li><a href="#screens">HOW IT WORKS</a>
+                            </li>
+                            <li><a href="#extra">JOIN US</a>
+                            </li>
+                            <li><a href="#reviews">REVIEWS</a>
+                            </li>
+                            <li><a href="#support">CONTACT US</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-->
+        </nav>
+
+        
+        <!--RevSlider-->
+        <div class="tp-banner-container">
+            <div class="tp-banner" >
+                <ul>
+                    
+                    <!-- SLIDE 3 -->
+                    <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" >
+                        <!-- MAIN IMAGE -->
+                        <img src="assets/img/freeze/bg1.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                        <!-- LAYERS -->
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption lfl fadeout hidden-xs"
+                            data-x="left"
+                            data-y="bottom"
+                            data-hoffset="200"
+                            data-voffset="100"
+                            data-speed="500"
+                            data-start="700"
+                            data-easing="Power4.easeOut">
+                            <img style= "width:88%; height:88%" src="assets/img/freeze/phone.png" alt="">
+                        </div>
+
+                        <div class="tp-caption lfl fadeout visible-xs"
+                            data-x="left"
+                            data-y="center"
+                            data-hoffset="700"
+                            data-voffset="0"
+                            data-speed="500"
+                            data-start="700"
+                            data-easing="Power4.easeOut">
+                            <img src="assets/img/freeze/Slides/ps.png" alt="">
+                        </div>
+						
+                        <div style= "color:#1976d2" class="tp-caption mediumlarge_light_white sft hidden-xs" data-x="right" data-y="center" data-hoffset="-150" data-voffset="25" data-speed="1000" data-start="1400" data-easing="Power4.easeOut">
+						
+							<canvas id="myCanvas" width="400" height="500" style="border:0px solid #d3d3d3;">
+								TASK DONE. IN A SNAP. #GetItDone</canvas>
+
+								<script>
+								var text = "YOUR TASK.";
+								var text1 = "DONE IN A SNAP.";								
+								var text2 = "Hire Skilled Folks For All Your";
+								var text3 = "Short and Temporary";
+								var text4 = "Needs";
+								var text5 = "#GetItDone";
+								var c = document.getElementById("myCanvas");
+								var ctx = c.getContext("2d");
+								var linkText="#support";
+								var linkX=110;
+								var linkY=460;
+								var linkHeight=48;
+								var linkWidth;
+								var inLink = false;
+								// draw the balls on the canvas
+								function draw(){
+								  c = document.getElementById("myCanvas");
+								  // check if supported
+								  if(c.getContext){
+
+									ctx=c.getContext("2d");
+
+									//clear canvas
+									ctx.clearRect(0, 0, c.width, c.height);
+
+									//draw the link
+									ctx.font= linkHeight + 'px sans-serif';
+									ctx.fillStyle = "#0000ff";
+									ctx.fillText(linkText,linkX,linkY);
+									linkWidth=(ctx.measureText(linkText).width);
+
+									//add mouse listeners
+									c.addEventListener("mousemove", on_mousemove, false);
+									c.addEventListener("click", on_click, false);
+
+								  }
+								}
+
+								//check if the mouse is over the link and change cursor style
+								function on_mousemove (ev) {
+								  var x, y;
+
+								  // Get the mouse position relative to the canvas element.
+								  if (ev.layerX || ev.layerX == 0) { //for firefox
+									x = ev.layerX;
+									y = ev.layerY;
+								  }
+								  x-=c.offsetLeft;
+								  y-=c.offsetTop;
+
+								  //is the mouse over the link?
+								  if(x>=linkX && x <= (linkX + linkWidth) && y<=linkY && y>= (linkY-linkHeight)){
+									  document.body.style.cursor = "pointer";
+									  inLink=true;
+								  }
+								  else{
+									  document.body.style.cursor = "";
+									  inLink=false;
+								  }
+								}
+
+								//if the link has been clicked, go to link
+								function on_click(e) {
+								  if (inLink)  {
+									window.location = linkText;
+								  }
+								}
+
+								draw();
+								
+								
+								
+								
+								ctx.beginPath();								
+								ctx.arc(200, 230, 150, 0, 2 * Math.PI);
+								ctx.lineWidth =0;
+								ctx.fillStyle = "rgba(246, 240, 130, 0.7)";
+								ctx.fill();
+								ctx.fillStyle = 'black';
+								ctx.font="bold 30px Arial";
+								ctx.fillText(text, 110 ,180);
+								ctx.fillStyle = 'black';
+								ctx.font="bold 30px Arial";
+								ctx.fillText(text1, 70 ,220);
+								ctx.fillStyle = 'black';
+								ctx.font="bold 15px Arial";
+								ctx.fillText(text2, 90 ,250);
+								ctx.fillStyle = 'black';
+								ctx.font="bold 15px Arial";
+								ctx.fillText(text3, 125 ,270);
+								ctx.fillStyle = 'black';
+								ctx.font="bold 15px Arial";
+								ctx.fillText(text4, 180 ,290);
+								ctx.fillStyle = "#64dd17";								
+								ctx.font="bold 30px Arial";
+								ctx.fillText(text5, 120 ,330);
+								
+								
+								make_base();
+
+								function make_base()
+								{
+								  base_image = new Image();
+								  base_image.src = 'assets/img/freeze/Slides/ps.png';
+								  base_image.onload = function(){
+									ctx.drawImage(base_image, 110, 420);
+								  }
+								}
+
+								</script> 
+								
+							
+							
+						</div>
+                        
+						<!--<div style= "color:white" class="tp-caption mediumlarge_light_white sfl hidden-xs" data-x="right" data-y="center" data-hoffset="-290" data-voffset="-25" data-speed="1000" data-start="1000" data-easing="Power4.easeOut">
+                           <b>YOUR TASK.
+                        </div>
+                        
+						<div style= "color:white" class="tp-caption mediumlarge_light_white sft hidden-xs" data-x="right" data-y="center" data-hoffset="-250" data-voffset="20" data-speed="1000" data-start="1200" data-easing="Power4.easeOut">
+                           <b>DONE IN A SNAP.
+						</div>
+						
+						<div style= "color:#64dd17" class="tp-caption mediumlarge_light_white sft hidden-xs" data-x="right" data-y="center" data-hoffset="-310" data-voffset="110" data-speed="1000" data-start="1400" data-easing="Power4.easeOut">
+                           <b>#GetitDone
+                        </div>-->
+						
+						
+						
+						<!--<div class="tp-caption mediumlarge_light_white sfl hidden-xs" data-x="right" data-y="center" data-hoffset="-200" data-voffset="0" data-speed="1000" data-start="1000" data-easing="Power4.easeOut">
+                            <a href="#" "><img src= "assets/img/freeze/c1.png" alt=""></a>
+                        </div>-->
+						
+                        <!--<div class="tp-caption mediumlarge_light_white sfl hidden-xs" data-x="right" data-y="center" data-hoffset="-300" data-voffset="250" data-speed="1000" data-start="1800" data-easing="Power4.easeOut">
+                            <a href="#" "> <img src="assets/img/freeze/Slides/ps.png" alt=""></a>
+                        </div>-->
+                        
+                        
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+
+    </header>
+
+
+    <div class="wrapper">
+	
+	
+	<section id="about">
+            <div class="container">
+                <br>
+                <div class="section-heading scrollpoint sp-effect3">
+                    <h2><b>CATEGORIES</h2>
+                    <div class="divider"></div>
+                    <!--<p>Oleose Beautiful App Landing Page</p>-->
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-6">
+                        <div class="about-item scrollpoint sp-effect2">
+                            <i class="fa fa-line-chart fa-2x"></i>
+                            <h3>Marketing and Media</h3>
+                            <p>SEO      | SMM      | Video        | Photography</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-6" >
+                        <div class="about-item scrollpoint sp-effect5">
+                            <i class="fa fa-briefcase fa-2x"></i>
+                            <h3>Business and Tech</h3>
+                            <p>Survey | Content | Web/App | Animation </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-6" >
+                        <div class="about-item scrollpoint sp-effect5">
+                            <i class="fa fa-user fa-2x"></i>
+                            <h3>Office and Admin</h3>
+                            <p>CA/CS   | Telecall  | Assistant  | Data Entry</p>
+                        </div>
+                    </div>
+				</div>
+				<br><br>
+				<div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-6" >
+                        <div class="about-item scrollpoint sp-effect1">
+                            <i class="fa fa-paint-brush fa-2x"></i>
+                            <h3>Graphics and Design</h3>
+                            <p>Logo      | UI / UX   | Poster      | Editing</p>
+                        </div>
+                    </div>
+					<div class="col-md-4 col-sm-4 col-xs-6" >
+                        <div class="about-item scrollpoint sp-effect1">
+                            <i class="fa fa-birthday-cake fa-2x"></i>
+                            <h3>Events and Outdoor</h3>
+                            <p>Emcee  | Sales       | Helpers    | Promoters</p>
+                        </div>
+                    </div>
+					<div class="col-md-4 col-sm-4 col-xs-6" >
+                        <div class="about-item scrollpoint sp-effect1">
+                            <i class="fa fa-magic fa-2x"></i>
+                            <h3>Fun and Quirky</h3>
+                            <p>Magic    | Singer    | Unique & Cool Requests </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="features">
+            <div class="container">
+                <div class="section-heading scrollpoint sp-effect3">
+				<br>
+                    <h2><b>WHY SNAPTASKER</h2>
+                    <div class="divider"></div>
+                    <!--<p>Learn more about this feature packed App</p>-->
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 scrollpoint sp-effect1">
+						<br>
+                        <div class="media text-right feature">
+                            <a class="pull-right" href="#">
+                                <i class="fa fa-ok fa-2x"></i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading"><b>Hire Verified Taskers</h3>
+                                Connect with verified and skilled Taskers
+                            </div>
+                        </div>
+						<br><br><br><br>
+                        <div class="media text-right feature">
+                            <a class="pull-right" href="#">
+                                <i class="fa fa-map-marker fa-2x"></i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading"><b>Appoint Local Folks </h3>
+                                Get your Taskers from your neighborhood
+                            </div>
+                        </div>
+						<br><br><br><br>
+                        <div class="media text-right feature">
+                            <a class="pull-right" href="#">
+                                <i class="fa fa-search fa-2x"></i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading"><b>Get Perfect Match</h3>
+                                Get Taskers who meets your expectations 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4" >
+                        <img src="assets/img/freeze/img1.png" class="img-responsive scrollpoint sp-effect5" alt="">
+                    </div>
+                    <div class="col-md-4 col-sm-4 scrollpoint sp-effect2">
+						<br>
+                        <div class="media feature">
+                            <a class="pull-left" href="#">
+                                <i class="fa fa-thumbs-up fa-2x"></i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading"><b>Hire for All Your Tasks</h3>
+                                Get people for all your requirements
+                            </div>
+                        </div>
+                       <br><br><br><br>
+                        <div class="media feature">
+                            <a class="pull-left" href="#">
+                                <i class="fa fa-comments fa-2x"></i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading"><b>Know Your Tasker</h3>
+                                Chat privately with Taskers using our App   
+                            </div>
+                        </div>
+                        <br><br><br><br>
+                        <div class="media feature">
+                            <a class="pull-left" href="#">
+                                <i class="fa fa-smile-o fa-2x"></i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading"><b>Join Us</h3>
+                                Earn more by joining us as an expert Tasker 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		
+		
+
+        <section id="screens">
+            <div class="container">
+				<br>
+                <div class="section-heading scrollpoint sp-effect3 ">
+                    <div class="container img-process-container" style="width:100%; padding:0px">
+                <!--<div class="section-heading scrollpoint sp-effect3">
+                    <h2><b>JOIN US</h2>
+                    <div class="divider"></div>
+                </div>-->
+				<div>
+				<img style="width:100%;" src="assets/img/freeze/process.jpg" alt="">
+				</div>				
+            </div>
+        </section>
+		
+		<section id="extra">
+            <div class="container img-process-container">
+				<div class="img-process">
+                    <h4>Be a Snaptasker</h4>
+                    <p>Have great skills?</p>
+                    <p>Earn every minute of your time!</p>
+                    <button class="btn-process btn-green">SIGN UP NOW<button>
+				</div>
+				<br>				
+            </div>
+        </section>
+		<section id="random">
+            <div class="container">
+				<div class="row">
+                    <div class="col-md-4 col-sm-3 col-xs-6">
+                        <div class="random-item scrollpoint sp-effect2">
+                            <i class="fa fa-inr fa-2x"></i>
+                            <h3>Extra Income</h3>
+                            <p>Use your free time to easily earn some quick bucks</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-3 col-xs-6" >
+                        <div class="random-item scrollpoint sp-effect5">
+                            <i class="fa fa-map-marker fa-2x"></i>
+                            <h3>Local Tasks </h3>
+                            <p>Select and work on tasks from your own neighborhood</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-3 col-xs-6" >
+                        <div class="random-item scrollpoint sp-effect5">
+                            <i class="fa fa-star fa-2x"></i>
+                            <h3>Become Expert </h3>
+                            <p>Sharpen your skills by working with awesome people</p>
+                        </div>
+                    </div>
+				</div>
+            </div>
+        </section>
+		
+		
+		<section id="reviews">
+            <div class="container">
+			<br>
+                <div class="section-heading inverse scrollpoint sp-effect3">
+                    <h2><b>REVIEWS</h2>
+                    <div class="divider"></div>
+                    <p>Read What People Are Saying About Us</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-push-1 scrollpoint sp-effect3">
+                        <div class="review-filtering">
+                            <div class="review">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="review-person">
+                                            <img src="http://api.randomuser.me/portraits/women/94.jpg" alt="" class="img-responsive">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="review-comment">
+                                            <h3>“A good place to be able to grow business. You can pick and choose the clients you would like to work on and believe in. A good add to portfolio and pocket! :)”</h3>
+                                            <p>
+                                                - Palak Sachdeva
+                                                <span>
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                    <i class="fa fa-star-o fa-lg"></i>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review rollitin">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="review-person">
+                                            <img src="http://api.randomuser.me/portraits/men/70.jpg" alt="" class="img-responsive">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="review-comment">
+                                            <h3>“Samfoxtech provides class apart service and these guys work day and night 24x7 to bring up new clients for developers, apart from that samfox are very responsive when it comes to clearing doubts, resolving issues..at the end of the day, they make both their clients and developers sleep with a happy face..”</h3>
+                                            <p>
+                                                - Ankitesh Jha
+                                                <span>
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                    <i class="fa fa-star-o fa-lg"></i>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review rollitin">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="review-person">
+                                            <img src="http://api.randomuser.me/portraits/men/93.jpg" alt="" class="img-responsive">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="review-comment">
+                                            <h3>“Keep It Up Guys Your Work Rules, Cheers :)”</h3>
+                                            <p>
+                                                - Ish Girwan
+                                                <span>
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                    <i class="fa fa-star-half-o fa-lg"></i>
+                                                    <i class="fa fa-star-o fa-lg"></i>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		
+        <section id="support" class="doublediagonal">
+            <div class="container">
+			<br>
+                <div class="section-heading scrollpoint sp-effect3">
+                    <h2><b>CONTACT US</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-8 col-sm-8 scrollpoint sp-effect1">
+                                <form role="form">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Your Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Your Email">
+                                    </div>
+									<div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Your Phone No.">
+                                    </div>
+									<div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Your City">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea cols="30" rows="10" class="form-control" placeholder="Your Message"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                </form>
+                            </div>
+                            <div class="col-md-4 col-sm-4 contact-details scrollpoint sp-effect2">
+                                <div class="media">
+                                    <a class="pull-left" href="#" >
+                                        <i class="fa fa-map-marker fa-2x"></i>
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Murugesh Palya, Bengaluru</h4>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <a class="pull-left" href="#" >
+                                        <i class="fa fa-envelope fa-2x"></i>
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">
+                                            <a href="mailto:contact@snaptasker.com">ish@samfoxtech.com</a>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <a class="pull-left" href="#" >
+                                        <i class="fa fa-phone fa-2x"></i>
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">+91-9886-0000-17</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <a href="#" class="scrollpoint sp-effect3">
+                    <img src="assets/img/freeze/snaplogo.png" alt="" class="logo">
+                </a>
+                <div class="social">
+                    <a href="#" class="scrollpoint sp-effect3"><i class="fa fa-twitter fa-lg"></i></a>
+                    <a href="#" class="scrollpoint sp-effect3"><i class="fa fa-google-plus fa-lg"></i></a>
+                    <a href="https://www.facebook.com/samfoxtech" class="scrollpoint sp-effect3"><i class="fa fa-facebook fa-lg"></i></a>
+                </div>
+                <div class="rights">
+                    <p>Copyright &copy; Samfox Technologies Pvt. Ltd.</p>
+					<a href="termsofuse.html">Terms of Use &nbsp; | &nbsp; </a> 
+					<a href="privacypolicy.html">Privacy Policy &nbsp; | &nbsp;</a>
+					<a href="faq.html">FAQs</a>
+                </div>
+            </div>
+        </footer>
+
+        
+
+    </div>
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/placeholdem.min.js"></script>
+    <script src="assets/js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script src="assets/js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script>
+        $(document).ready(function() {
+            appMaster.preLoader();
+        });
+    </script>
+</body>
+
+</html>
