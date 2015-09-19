@@ -213,6 +213,8 @@ section#extra .extra-item i.fa {
 
 section#random {
   position: relative;
+  margin-left: 30px;
+    margin-right: 30px;
 }
 section#random .random-item {
   text-align: center;
@@ -270,6 +272,8 @@ section#reviews {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 section#reviews .review-filtering {
   margin: 20px 0 100px 0;
@@ -859,6 +863,8 @@ section#random .random-item:hover h3 {
 
 section#features {
   background: #f6f6f6;
+  margin-left:30px;
+  margin-right:30px;
 }
 section#features header h1:after {
   background: #64dd17;
@@ -1128,6 +1134,8 @@ circle {
     background: url("../img/lady.jpg") 100%;
     height: 600px;
     background-size: cover;
+    margin-right:30px;
+    margin-left:30px;
 
 }
 
