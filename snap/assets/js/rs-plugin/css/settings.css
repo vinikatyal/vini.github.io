@@ -1764,9 +1764,7 @@ background: transparent;
 -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
 zoom: 1;
-width:70% !important;
-    /*height: 100% !important;*/
-    height:580px !important;
+    height:560px !important;
     right:50px !important;
     position: relative;
 }
