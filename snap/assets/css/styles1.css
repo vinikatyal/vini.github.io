@@ -24,13 +24,18 @@
     }
         @font-face {
         font-family: 'ArialNB';
-        src: url('../fonts/ArialNB.ttf');
+        src: url('../fonts/ARIALNB.ttf');
+
+    }
+    @font-face {
+        font-family: 'ArialN';
+        src: url('../fonts/ARIALN.ttf');
 
     }
 
        @font-face {
         font-family: 'ArialNBI';
-        src: url('../fonts/ArialNBI.ttf');
+        src: url('../fonts/ARIALNBI.ttf');
 
     }
 .video-container {
