@@ -45,7 +45,13 @@ body {
   font-family: 'Arial', Arial;
   color: #666666;
   -webkit-font-smoothing: antialiased;
+
 }
+
+body .home-body {
+  background-color: #f9f9f7;
+}
+
 a {
   font-family: 'Arial', Arial;
   -webkit-font-smoothing: antialiased;
@@ -774,6 +780,7 @@ form textarea.form-control {
   }
 }
 header {
+ /* border-top: 4px solid #64dd17;*/
   background: #fff;
   border-bottom: 4px solid #64dd17;
 }
@@ -1196,3 +1203,9 @@ circle {
     border-radius: 4px;
     text-decoration: none;
 }
+
+.navbar a {
+      color: #777 !important;
+      text-decoration: none;
+}
+
