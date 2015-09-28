@@ -2,7 +2,6 @@
    @font-face {
         font-family: 'ArialBold';
         src: url('../fonts/arialbd.ttf');
-        font-style: normal;
 
     }
 
@@ -1184,7 +1183,7 @@ circle {
 .img-process h4 {
 
     font-size: 44px;
-     font-family: 'ArialBold', Arial;
+     font-family: 'arialbd';
     font-weight: 700;
     color: #1976d2;
     margin: 0 auto 26px;
@@ -1193,7 +1192,8 @@ circle {
 .img-process p {
  color: #000;
     font-size: 19px;
-    font-style: italic;
+    /*font-style: italic;*/
+    font-family: "ARIALNBI";
 }
 
 .img-process .btn-green {
