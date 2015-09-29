@@ -1190,7 +1190,7 @@ circle {
 }
 
 .img-process p {
- color: #000;
+    color: #000;
     font-size: 19px;
     /*font-style: italic;*/
     font-family: "ARIALNBI";
@@ -1228,7 +1228,7 @@ circle {
 }
 
 header .navbar-default ul.navbar-nav li a {
-  padding: 7px 6px;
+  padding: 7px 10px;
   font-family: "ArialNB";
 }
 
