@@ -1237,6 +1237,10 @@ header .navbar-default ul.navbar-nav li a {
       text-decoration: none;
 }
 
+.navbar-default .navbar-nav>.active>a {
+  background-color: #000;
+}
+
 .home-body{
   background-color: #f9f9f7;
 }
