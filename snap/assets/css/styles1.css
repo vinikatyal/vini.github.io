@@ -1244,3 +1244,8 @@ header .navbar-default ul.navbar-nav li a {
 .home-body{
   background-color: #f9f9f7;
 }
+
+.nav-icons {
+  padding: 7px 6px;
+  
+}
