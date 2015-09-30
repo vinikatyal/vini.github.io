@@ -215,7 +215,7 @@ section#about {
 }
 section#about .about-item {
   text-align: center;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 25px;
   color: #999999;
 }
@@ -1040,19 +1040,19 @@ section#support .media:hover h3 {
 }
 /* footer section */
 footer {
-  background: #64dd17;
+  background: #1976d2;
   /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #64dd17 0%, #1976d2 100%);
+  background: -moz-linear-gradient(-45deg, #1976d2 0%, #1976d2 100%);
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #64dd17), color-stop(100%, #1976d2));
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #1976d2), color-stop(100%, #1976d2));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(-45deg, #64dd17 0%, #1976d2 100%);
+  background: -webkit-linear-gradient(-45deg, #1976d2 0%, #1976d2 100%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(-45deg, #64dd17 0%, #1976d2 100%);
+  background: -o-linear-gradient(-45deg, #1976d2 0%, #1976d2 100%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(-45deg, #64dd17 0%, #1976d2 100%);
+  background: -ms-linear-gradient(-45deg, #1976d2 0%, #1976d2 100%);
   /* IE10+ */
-  background: linear-gradient(-45deg, #64dd17 0%, #1976d2 100%);
+  background: linear-gradient(-45deg, #1976d2 0%, #1976d2 100%);
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4CAF50, endColorstr=#1976d2, GradientType=1);
   /* IE6-9 fallback on horizontal gradient */

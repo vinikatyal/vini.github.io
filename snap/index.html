@@ -291,14 +291,17 @@
                         <div class="about-item scrollpoint sp-effect2">
                             <i class="fa fa-line-chart fa-2x"></i>
                             <h3>Marketing and Media</h3>
-                            <p>Social media      | SEO      | Product Shoot  | Writers - editors | Explainer videos | 3D/ animation</p>
+                            <p>Social media      | SEO      | Product shoot  |
+                                <br/>
+                             Writers - editors | Explainer videos | 3D/ animation<br/>...and more</p>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-6" >
                         <div class="about-item scrollpoint sp-effect5">
                             <i class="fa fa-briefcase fa-2x"></i>
                             <h3>Business and Tech</h3>
-                            <p>Online research | Business Analysis | PPT's and reports  | Website | Accounting | Apps </p>
+                            <p>Online research | Business analysis | PPT's and reports  | 
+                                <br/> Website | Accounting | Apps<br/>...and more</p>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-6" >
@@ -306,7 +309,8 @@
                             <i class="fa fa-user fa-2x"></i>
                             <h3>Office and Admin</h3>
                             <p>Virtual assistants  | Tele calling  | DataEntry 
-                              | Cataloging | Temp staff</p>
+                                <br/>
+                              | Cataloging | Temp staff<br/>...and more</p>
                         </div>
                     </div>
 				</div>
@@ -316,15 +320,16 @@
                         <div class="about-item scrollpoint sp-effect1">
                             <i class="fa fa-paint-brush fa-2x"></i>
                             <h3>Graphics and Design</h3>
-                            <p>Logo | UI / UX | Banners, poster |</p>
-                             <p>  Web design | Image editors</p>
+                            <p>Logo | UI / UX | Banners, poster |
+                            <br/> Web design | Image editors<br/>...and more</p>
                         </div>
                     </div>
 					<div class="col-md-4 col-sm-4 col-xs-6" >
                         <div class="about-item scrollpoint sp-effect1">
                             <i class="fa fa-birthday-cake fa-2x"></i>
                             <h3>Events and Outdoor</h3>
-                            <p>Emcee  | Bartenders | Outdoor Sales   | Runners   | Promoters</p>
+                            <p>Emcee  | Bartenders | Outdoor sales |
+                            <br/>Runners  | Promoters<br/>...and more</p>
                         </div>
                     </div>
 					<div class="col-md-4 col-sm-4 col-xs-6" >
@@ -332,7 +337,8 @@
                             <i class="fa fa-magic fa-2x"></i>
                             <h3>Fun and Quirky</h3>
                             <p>Interior design | Entertainers | Interns  
-                             | Parttimers | Almost anything!</p>
+                                <br/>
+                             | Part-timers | Almost anything!<br/>...and more</p>
                         </div>
                     </div>
                 </div>
@@ -356,7 +362,7 @@
                                 <i class="fa fa-ok fa-2x"></i>
                             </a>
                             <div class="media-body">
-                                <h3 class="media-heading"><b>Verified Taskers</h3>
+                                <h3 class="media-heading">Verified Taskers</h3>
                                 Connect with skilled and
 verified taskers
                             </div>
@@ -367,7 +373,7 @@ verified taskers
                                 <i class="fa fa-map-marker fa-2x"></i>
                             </a>
                             <div class="media-body">
-                                <h3 class="media-heading"><b>Hyper Local model</h3>
+                                <h3 class="media-heading">Hyper Local model</h3>
                               Hire taskers in your
 neighbourhood
                             </div>
@@ -378,7 +384,7 @@ neighbourhood
                                 <i class="fa fa-search fa-2x"></i>
                             </a>
                             <div class="media-body">
-                                <h3 class="media-heading"><b>On demand model</h3>
+                                <h3 class="media-heading">On demand model</h3>
                                Hire whenever you need 
                             </div>
                         </div>
@@ -393,7 +399,7 @@ neighbourhood
                                 <i class="fa fa-thumbs-up fa-2x"></i>
                             </a>
                             <div class="media-body">
-                                <h3 class="media-heading"><b>Flexible and Efficient</h3>
+                                <h3 class="media-heading">Flexible and Efficient</h3>
                                 Why hire full-time when
 you can outsource?
                             </div>
@@ -404,7 +410,7 @@ you can outsource?
                                 <i class="fa fa-comments fa-2x"></i>
                             </a>
                             <div class="media-body">
-                                <h3 class="media-heading"><b>Know your tasker</h3>
+                                <h3 class="media-heading">Know your tasker</h3>
                                 Chat privately with
 taskers through the app 
                             </div>
@@ -415,7 +421,7 @@ taskers through the app
                                 <i class="fa fa-smile-o fa-2x"></i>
                             </a>
                             <div class="media-body">
-                                <h3 class="media-heading"><b>Hire and Work</h3>
+                                <h3 class="media-heading">Hire and Work</h3>
                                Not Just hire - you can
 find work too.
                             </div>
@@ -676,11 +682,34 @@ minute!</p>
         $(document).ready(function() {
             appMaster.preLoader();
         });
+
+
         
         $(".nav a").on("click", function(){
    $(".nav").find(".active").removeClass("active");
    $(this).parent().addClass("active");
 });
+
+        /* activate scrollspy menu */
+$('body').scrollspy({
+  target: '#bs-example-navbar-collapse-1',
+  offset: 52
+});
+
+/* smooth scrolling sections */
+$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top - 90
+        }, 1000);
+        return false;
+      }
+    }
+});
+
     </script>
 </body>
 
