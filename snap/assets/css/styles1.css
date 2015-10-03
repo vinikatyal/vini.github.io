@@ -218,6 +218,7 @@ section#about .about-item {
   font-size: 14px;
   line-height: 25px;
   color: #999999;
+  font-weight: 200;
 }
 section#about .about-item i.fa {
   -webkit-border-radius: 50%;
