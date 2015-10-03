@@ -263,10 +263,17 @@ section#random {
   margin-left: 30px;
     margin-right: 30px;
 }
+
+section#random .row {
+      margin-right: -35px;
+    margin-left: -35px;
+}
+
 section#random .random-item {
   text-align: center;
   font-size: 17px;
   line-height: 25px;
+  font-weight: 300;
   color: #999999;
 }
 section#random .random-item i.fa {
@@ -304,6 +311,8 @@ section#features .media .media-heading {
 }
 section#features .media .media-body {
   color: #999999;
+   font-weight: 200;
+   font-size: 17px;
 }
 section#features .media.feature {
   margin-top: 25px;
